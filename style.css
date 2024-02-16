@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	color: #ffffff;
+	font-family: "Lato", sans-serif;
+}
+.container {
+	height: 100vh;
+	display: flex;
+	background-color: #000000;
+}
+.sidebar {
+	background-color: #000000;
+	width: 290px;
+}
+.main-content {
+	flex: 1;
+	background-color: #3ed733;
+	overflow: auto;
+	border-radius: 1rem;
+}
+.music-player {
+	background-color: #3364d7;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav {
+	background-color: #2d2c2cc2;
+	border-radius: 0.7rem;
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+	margin: 1rem;
+	line-height: 2.5rem;
+	/* padding: 0.5rem 0.75rem; */
+}
+.nav-option {
+	line-height: 2rem;
+	padding: 0.5rem 0.75rem;
+	font-weight: 700;
+	display: flex;
+	text-align: center;
+}
+.search {
+	opacity: 0.75;
+	margin: 0.25rem;
+}
+.search:hover {
+	opacity: 1;
+}
+
+.nav-option a {
+	font-size: 1rem;
+	padding-bottom: 15px;
+}
+.nav-option a,
+i {
+	padding-right: 10px;
+	font-size: 1.25rem;
+}
+.library {
+	background-color: #2d2c2c5d;
+	border-radius: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	padding: 0.56rem 0.75rem;
+	margin: 0.5rem;
+	height: 100%;
+	overflow: auto;
+}
+.option {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 0.7rem;
+	opacity: 0.75;
+	background-color: #2d2c2c5d;
+	margin-bottom: 0.4rem;
+}
+.option:hover {
+	opacity: 1;
+}
+.lib-option {
+	line-height: 2.5rem;
+	padding: 0.5rem 0.75rem;
+	font-weight: 700;
+	display: flex;
+	text-align: center;
+}
+.lib-option img {
+	width: 20px;
+	padding-right: 1.3rem;
+}
+.boxes {
+	display: flex;
+	flex-direction: column;
+}
+.box {
+	background-color: #2d2c2cc2;
+	padding: 0.78rem 0.75rem;
+	border-radius: 0.7rem;
+}
+p {
+	padding: 0.4rem;
+}
+.box-2 {
+	background-color: #2d2c2cc2;
+	border-radius: 0.7rem;
+	padding: 10px;
+	margin-top: 8px;
+	height: 130px;
+}
+.badge {
+	color: #000000;
+	background: #fff;
+	border: none;
+	border-radius: 1rem;
+	font-weight: 700;
+	padding: 0.5rem 0.75rem;
+	margin-top: 0.3rem;
+}
+.para1 {
+	font-size: 1rem;
+}
+.para2 {
+	font-size: 0.8rem;
+}
