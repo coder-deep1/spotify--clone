@@ -2,24 +2,22 @@
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	color: #ffffff;
 	font-family: "Lato", sans-serif;
 }
+
 .container {
 	height: 100vh;
 	display: flex;
 	background-color: #000000;
 }
+
+/* sidebar here  */
+
 .sidebar {
 	background-color: #000000;
 	width: 290px;
 }
-.main-content {
-	flex: 1;
-	background-color: #3ed733;
-	overflow: auto;
-	border-radius: 1rem;
-}
+
 .music-player {
 	background-color: #3364d7;
 	position: fixed;
@@ -27,6 +25,7 @@
 	width: 100%;
 	height: 70px;
 }
+
 a {
 	text-decoration: none;
 	color: #fff;
@@ -38,34 +37,33 @@ a {
 	display: flex;
 	flex-direction: column;
 	height: 100px;
-	margin: 1rem;
+	margin: 0.55rem;
 	line-height: 2.5rem;
-	/* padding: 0.5rem 0.75rem; */
 }
+
 .nav-option {
 	line-height: 2rem;
-	padding: 0.5rem 0.75rem;
+	padding: 0.56rem 0.75rem;
 	font-weight: 700;
 	display: flex;
 	text-align: center;
 }
+
 .search {
 	opacity: 0.75;
 	margin: 0.25rem;
 }
+
 .search:hover {
 	opacity: 1;
 }
 
-.nav-option a {
-	font-size: 1rem;
-	padding-bottom: 15px;
-}
 .nav-option a,
 i {
 	padding-right: 10px;
 	font-size: 1.25rem;
 }
+
 .library {
 	background-color: #2d2c2c5d;
 	border-radius: 0.8rem;
@@ -73,10 +71,11 @@ i {
 	flex-direction: column;
 	justify-items: center;
 	padding: 0.56rem 0.75rem;
-	margin: 0.5rem;
 	height: 100%;
 	overflow: auto;
+	margin: 0rem;
 }
+
 .option {
 	display: flex;
 	flex-direction: row;
@@ -87,9 +86,11 @@ i {
 	background-color: #2d2c2c5d;
 	margin-bottom: 0.4rem;
 }
+
 .option:hover {
 	opacity: 1;
 }
+
 .lib-option {
 	line-height: 2.5rem;
 	padding: 0.5rem 0.75rem;
@@ -97,22 +98,28 @@ i {
 	display: flex;
 	text-align: center;
 }
+
 .lib-option img {
 	width: 20px;
 	padding-right: 1.3rem;
 }
+
 .boxes {
 	display: flex;
 	flex-direction: column;
+	color: #fff;
 }
+
 .box {
 	background-color: #2d2c2cc2;
 	padding: 0.78rem 0.75rem;
 	border-radius: 0.7rem;
 }
+
 p {
 	padding: 0.4rem;
 }
+
 .box-2 {
 	background-color: #2d2c2cc2;
 	border-radius: 0.7rem;
@@ -120,18 +127,79 @@ p {
 	margin-top: 8px;
 	height: 130px;
 }
+
 .badge {
-	color: #000000;
-	background: #fff;
 	border: none;
-	border-radius: 1rem;
-	font-weight: 700;
-	padding: 0.5rem 0.75rem;
+	background: #fff;
+	color: #000000;
+	cursor: pointer;
+	font-weight: bold;
 	margin-top: 0.3rem;
+	border-radius: 1rem;
+	padding: 0.5rem 0.75rem;
+	width: fit-content;
+	transition: transform 0.3s ease;
 }
+
+.badge:hover {
+	background-color: #2d2c2cc2;
+	color: #fff;
+	transform: scale(1.1);
+}
+
 .para1 {
 	font-size: 1rem;
 }
+
 .para2 {
 	font-size: 0.8rem;
+}
+
+/* main-content here  */
+
+.main-content {
+	flex: 1;
+	overflow: auto;
+	border-radius: 1rem;
+}
+
+.sticky-nav {
+	display: flex;
+	align-items: center;
+	top: 0;
+	justify-content: space-between;
+	background-color: #2d2c2c5d;
+	position: sticky;
+	padding: 0.75rem 0 0.75rem 0;
+}
+.sticky-nav-icon {
+	margin-left: 0.75rem;
+	opacity: 0.8;
+}
+.sticky-nav-btn {
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	cursor: pointer;
+}
+.sticky-nav-btn span {
+	cursor: pointer;
+	padding-left: 1rem;
+}
+
+.install-btn {
+	font-size: 0.9rem;
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	justify-content: center;
+}
+.dark-btn {
+	color: #fff;
+	background-color: #000000;
+}
+.dark-btn :hover {
+	color: #eae4e4;
 }
