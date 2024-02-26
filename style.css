@@ -3,6 +3,8 @@
 	padding: 0;
 	overflow: hidden;
 	font-family: "Lato", sans-serif;
+	color: #fff;
+	scroll-behavior: smooth;
 }
 
 .container {
@@ -161,21 +163,30 @@ p {
 	flex: 1;
 	overflow: auto;
 	border-radius: 1rem;
+	padding: 0 1.5rem 0 1.5rem;
 }
 
 .sticky-nav {
 	display: flex;
 	align-items: center;
 	top: 0;
+	z-index: 5;
 	justify-content: space-between;
-	background-color: #2d2c2c5d;
+	background-color: #0c0c0cfc;
 	position: sticky;
 	padding: 0.75rem 0 0.75rem 0;
 }
+
 .sticky-nav-icon {
 	margin-left: 0.75rem;
 	opacity: 0.8;
+	cursor: pointer;
 }
+
+.sticky-nav-icon {
+	opacity: 1;
+}
+
 .sticky-nav-btn {
 	display: flex;
 	align-items: center;
@@ -184,6 +195,7 @@ p {
 	padding-right: 1rem;
 	cursor: pointer;
 }
+
 .sticky-nav-btn span {
 	cursor: pointer;
 	padding-left: 1rem;
@@ -196,10 +208,67 @@ p {
 	margin-left: 10px;
 	justify-content: center;
 }
+
 .dark-btn {
 	color: #fff;
 	background-color: #000000;
 }
+
 .dark-btn :hover {
 	color: #eae4e4;
+}
+
+@media screen and (max-width: 992px) {
+	.hide {
+		display: none;
+	}
+}
+
+/* card section here  */
+
+.cards-container {
+	display: flex;
+	/* gap: 1rem; */
+	flex-wrap: wrap;
+}
+
+.card {
+	background-color: #2d2c2c;
+	border-radius: 0.5rem;
+	width: 150px;
+	padding: 0.8rem;
+	transition: transform 0.3s ease;
+	margin: 1.5rem 0 1.5rem 1.5rem;
+}
+.card:hover {
+	transform: scale(1.05);
+}
+.card > img {
+	width: 100%;
+	background-color: #2d2c2cc7;
+	border-radius: 0.5rem;
+}
+.card-title {
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.card-info {
+	opacity: 0.8;
+	cursor: pointer;
+	font-size: 0.75rem;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	margin-bottom: 200px;
+	margin-top: 100px;
+}
+
+.inner-footer {
+	width: 90%;
+	border-top: 1px solid #ffffff34;
+	opacity: 0.5rem;
 }
