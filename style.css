@@ -20,14 +20,6 @@
 	width: 290px;
 }
 
-.music-player {
-	background-color: #3364d7;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	height: 70px;
-}
-
 a {
 	text-decoration: none;
 	color: #fff;
@@ -64,6 +56,9 @@ a {
 i {
 	padding-right: 10px;
 	font-size: 1.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .library {
@@ -155,6 +150,7 @@ p {
 
 .para2 {
 	font-size: 0.8rem;
+	opacity: 0.8;
 }
 
 /* main-content here  */
@@ -228,7 +224,6 @@ p {
 
 .cards-container {
 	display: flex;
-	/* gap: 1rem; */
 	flex-wrap: wrap;
 }
 
@@ -271,4 +266,81 @@ p {
 	width: 90%;
 	border-top: 1px solid #ffffff34;
 	opacity: 0.5rem;
+}
+
+/*  music player section here  */
+
+.music-player {
+	background-color: #131314;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	overflow: auto;
+}
+
+.left-controls {
+	display: flex;
+	align-items: center;
+	width: 25%;
+	cursor: pointer;
+	margin-left: 2rem;
+	gap: 1rem;
+}
+.left-controls > img {
+	object-fit: cover;
+	width: 50px;
+	border-radius: 0.2rem;
+}
+.music-title {
+	font-size: 0.8rem;
+}
+.music-artist {
+	line-height: 0.4rem;
+	opacity: 0.8;
+	font-size: 0.7rem;
+}
+.middle-controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	background-color: #555;
+}
+.right-controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+	background-color: #444;
+}
+
+
+  /*  scroller bar design here  */
+::-webkit-scrollbar {
+	border-radius: 1rem;
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #6c6a6a; /* Light grey color */
+}
+
+::-webkit-scrollbar-thumb {
+	background: #4caf50; /* Green color */
+}
+
+/* Mozilla Firefox */
+::-moz-scrollbar {
+	width: 5px;
+	border-radius: 1rem;
+}
+
+::-moz-scrollbar-track {
+	background: #868484; /* Light grey color */
+}
+
+::-moz-scrollbar-thumb {
+	background: #4caf50; /* Green color */
 }
