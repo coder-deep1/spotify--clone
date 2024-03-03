@@ -20,6 +20,7 @@
 	<body>
 		<div class="container">
 			<!-- Sidebar navigation -->
+
 			<aside class="sidebar">
 				<div class="nav">
 					<div class="nav-option">
@@ -31,7 +32,9 @@
 						</a>
 					</div>
 				</div>
+
 				<!-- Library section -->
+
 				<div class="library">
 					<div class="option">
 						<div class="lib-option">
@@ -43,7 +46,9 @@
 						<a href="#"><i class="fa-solid fa-plus"></i></a>
 						<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
 					</div>
+
 					<!-- Boxes for playlist and podcast -->
+
 					<div class="boxes">
 						<div class="box">
 							<p class="para1">Create your first playlist</p>
@@ -60,6 +65,7 @@
 			</aside>
 			<div class="main-content">
 				<!-- Sticky navigation -->
+
 				<div class="sticky-nav">
 					<div class="sticky-nav-icon">
 						<img src="./assets/backward_icon.png" alt="alt" />
@@ -74,7 +80,9 @@
 						<span style="color: #fff"><i class="fa-regular fa-user"></i></span>
 					</div>
 				</div>
+
 				<!-- Content cards -->
+
 				<h2>Recently Played</h2>
 				<div class="cards-container">
 					<div class="card">
@@ -197,9 +205,11 @@
 					<div class="inner-footer"></div>
 				</div>
 			</div>
+
 			<!-- Music player section -->
+
 			<div class="music-player">
-				<div class="left-controls">
+				<div class="album">
 					<img
 						src="https://i.scdn.co/image/ab67706c0000da84650d4714d753a7d59ae7eacb"
 						alt="playing" />
@@ -209,8 +219,41 @@
 					</div>
 					<i class="fa-regular fa-heart"></i>
 				</div>
-				<div class="middle-controls">midle</div>
-				<div class="right-controls">right</div>
+				<div class="player">
+					<div class="player-controls">
+						<img
+							src="./assets/player_icon1.png"
+							alt="icon"
+							class="player-control-icon" />
+						<img
+							src="./assets/player_icon2.png"
+							alt="icon"
+							class="player-control-icon" />
+						<img
+							src="./assets/player_icon3.png"
+							alt="icon"
+							class="player-control-icon play-icon" />
+						<img
+							src="./assets/player_icon4.png"
+							alt="icon"
+							class="player-control-icon" />
+						<img
+							src="./assets/player_icon5.png"
+							alt="icon"
+							class="player-control-icon" />
+					</div>
+					<div class="playback-bar">
+						<span class="curr-time">00:00</span>
+						<input
+							type="range"
+							min="0"
+							max="100"
+							class="progress-bar"
+							step="1" />
+						<span class="tot-time">3:33</span>
+					</div>
+				</div>
+				<div class="controls">right</div>
 			</div>
 		</div>
 	</body>
