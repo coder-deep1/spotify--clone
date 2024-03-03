@@ -208,11 +208,13 @@ p {
 .dark-btn :hover {
 	color: #eae4e4;
 }
+
 .user {
 	margin-left: 0.5rem;
 	cursor: pointer;
 	opacity: 0.75;
 }
+
 .user:hover {
 	opacity: 1;
 }
